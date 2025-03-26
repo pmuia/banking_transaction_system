@@ -1,0 +1,20 @@
+[package]
+name = "banking_transaction_system"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.10.2"
+dotenv = "0.15.0"
+merkle_light = "0.4.0"
+postgres = "0.19.10"
+rayon = "1.10.0"
+rust-crypto = "0.2.36"
+serde = "1.0.219"
+serde_json = "1.0.140"
+sqlx = { version = "0.8.3", features = ["postgres", "runtime-tokio", "macros", "bigdecimal", "time"] }
+tokio = "1.44.1"
+redis = { version = "0.24", features = ["aio", "tokio-comp"] }
+chrono = { version = "0.4", features = ["serde"] }
+log = "0.4"
+env_logger = "0.10"
